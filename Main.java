@@ -4,6 +4,7 @@ public class Main
 {
     public static void main(String[] args)
     {
+        // Creates an ArrayList of Person that can hold Person, Student, Employee, and Manager objects
         ArrayList<Person> people = new ArrayList<>();
 
         people.add(new Person("Galadriel", 8000));
@@ -15,6 +16,7 @@ public class Main
         people.add(new Manager("Legolas", 3000, 500, 200));
         people.add(new Person("Gimli", 140));
 
+        // Iterates through the ArrayList and calls the introduce method for each object
         for (int i = 0; i < people.size(); i++) 
         {
             Person person = people.get(i);
